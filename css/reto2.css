@@ -1,7 +1,17 @@
 section {
-  display: flex;
+  display: block;
   width: 100%;
   border: solid 1px black;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    float: right;
+}
+#btnAddPet{
+    height: 100%;
 }
 
 /*POPUP INGRESO FORM*/
