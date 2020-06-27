@@ -6,9 +6,8 @@ section {
 
 #btnAddPet{
     float: right;
-    position:absolute;
+    position:relative;
     margin-left: 50%;
-    height: inherit;
 }
 
 /*POPUP INGRESO FORM*/
