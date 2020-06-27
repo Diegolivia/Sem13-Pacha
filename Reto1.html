@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reto1.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <h1>¿Por que evitar los callbacks en llamadas asincronas?</h1>
+      <p>
+        Los callbacks no se ejecutan de manera ordenada por lo que puede haber
+        desorden al momento de hacer las llamadas por lo que es mas complicado
+        manejar la correcta ejecucion del mismo, esto podria causar problemas en
+        caso se desee trabajar dichas funciones. Asimismo, usar callbacks
+        sobrecargan el codigo con informacion innecesaria si se desea
+        utilizarlas para realizar funciones anidadas y esto puede llegar a
+        culminar con la creacion de un "Callback Hell".
+      </p>
+      <div>
+        <img id="imgCB1" src="Media/img/Callback.png" alt="Callbacks" />
+      </div>
+    </section>
+    <section>
+      <h1>¿Que es una promesa?</h1>
+      <p>
+        Una promesa es un objeto que representa una posible finalizacion o error
+        de una operacion asincrona junto con el valor resultante que no
+        necesariamente se conoce al momento de ejecutar la promesa en si. Esto
+        permite crear metodos asyncronos que entregaran valores en el futuro o
+        un error en caso no funcione sin necesidad de tener que devolver
+        inmediatamente estos mismos.
+      </p>
+      <div>
+        <img id="imgPB1" src="Media/img/PromesaBasica1.png" alt="Promesajs" />
+      </div>
+      <p>
+        Las promesas son capaces de utilizar un orden de stack por el cual
+        pueden ser ejecutadas en orden junto con otras funciones mas de acuerdo
+        al resultado de la ejecucion de la promesa misma, este proceso se le
+        puede denominar "Chaining".
+      </p>
+    </section>
+    <section>
+      <h1>¿Que es un callback hell?</h1>
+      <p>
+        Utilizar una gran cantidad de callbacks anidados sin nombres generan una
+        piramide de codigo que conforme se hace mas grande se vuelve mas confuso
+        y aglomerado.
+      </p>
+      <div>
+        <img id="imgCH1" src="Media/img/CallbackHell.png" />
+      </div>
+      <p>
+        Esto sucede porque se esta tratando de construir js usando una vista
+        top-down con la idea de que el codigo sera ejecutado desde la primera
+        linea hacia abajo cuando en realidad no necesariamente sucederia asi ya
+        que las funciones en Js son capaces de ejecutarse de manera desordenada.
+        Asimismo, el codigo creado en la piramide de callbacks es innatamente
+        confuso porque hay demasiado codigo aglomerado en muy poco espacio.
+      </p>
+    </section>
+  </body>
+</html>

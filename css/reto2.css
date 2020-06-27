@@ -1,0 +1,88 @@
+section {
+  display: flex;
+  width: 100%;
+  border: solid 1px black;
+}
+
+/*POPUP INGRESO FORM*/
+.form-popup {
+  position: relative;
+  border: 3px solid #f1f1f1;
+}
+
+.hide{
+    display: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#frmAgregar {
+  width: 70%;
+  margin: 0 15%;
+  padding: 3% 0;
+  box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.75);
+}
+
+label{
+    margin: 0;
+    padding: 0;
+
+}
+
+#liTextarea {
+  width: 92%;
+}
+
+#Botones {
+  text-align: center;
+}
+
+h2 {
+  margin: 0 50px;
+  align-self: center;
+}
+
+ul {
+  width: 100%;
+}
+
+ul li {
+  width: 40%;
+  padding: 0 2%;
+  display: inline-block;
+}
+
+ul li > * {
+  width: 90%;
+}
+
+ul li input {
+  padding: 5% 3%;
+  margin: 5px 0 22px 0;
+}
+
+button {
+  padding: 2% 5%;
+  background-color: lightgrey;
+  border: none;
+}
+
+/* Table */
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
