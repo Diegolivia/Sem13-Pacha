@@ -1,97 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reto2.css" />
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <section id="Head">
-      <h1>Dog CRUDo</h1>
-      <nav>
+        <h1>Dog CRUDo</h1>
         <button onclick="onAddPet()" id="btnAddPet">Agregar Mascota</button>
-      </nav>
     </section>
     <section class="form-popup hide" id="frmAgregar">
-      <form
-        onsubmit="event.preventDefault();onFormSubmit();"
-        autocomplete="off"
-        class="form-content"
-      >
-        <h2>Agregar Mascota</h2>
-        <ul>
-          <li>
-            <input
-              type="text"
-              name="Nombre"
-              id="ipName"
-              placeholder="Nombre*"
-            />
-          </li>
-          <li>
-            <input
-              type="text"
-              name="Apellido"
-              id="ipApellido"
-              placeholder="Apellido"
-            />
-          </li>
-          <li>
-            <input type="text" name="Raza" id="ipRaza" placeholder="Raza*" />
-          </li>
-          <li>
-            <input
-              type="number"
-              name="Telefono"
-              id="ipTelefono"
-              placeholder="Telefono*"
-            />
-          </li>
-          <li>
-            <input type="text" name="Pais" id="ipPais" placeholder="Pais*" />
-          </li>
-          <li>
-            <input
-              type="text"
-              name="URL"
-              id="ipUrl"
-              placeholder="URL de Fotografia"
-            />
-          </li>
-          <li id="liTextarea">
-            <textarea
-              name="Descripcion"
-              id="ipDescripcion"
-              placeholder="Sobre él/ella*"
-              rows="10"
-            ></textarea>
-          </li>
-        </ul>
-        <div id="Botones">
-          <button type="submit">Aceptar</button>
-          <button>Cancelar</button>
-        </div>
-      </form>
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="form-content">
+            <h2>Agregar Mascota</h2>
+            <ul>
+                <li>
+                    <input type="text" name="Nombre" id="ipName" placeholder="Nombre*" />
+                </li>
+                <li>
+                    <input type="text" name="Apellido" id="ipApellido" placeholder="Apellido" />
+                </li>
+                <li>
+                    <input type="text" name="Raza" id="ipRaza" placeholder="Raza*" />
+                </li>
+                <li>
+                    <input type="number" name="Telefono" id="ipTelefono" placeholder="Telefono*" />
+                </li>
+                <li>
+                    <input type="text" name="Pais" id="ipPais" placeholder="Pais*" />
+                </li>
+                <li>
+                    <input type="text" name="URL" id="ipUrl" placeholder="URL de Fotografia" />
+                </li>
+                <li id="liTextarea">
+                    <textarea name="Descripcion" id="ipDescripcion" placeholder="Sobre él/ella*" rows="10"></textarea>
+                </li>
+            </ul>
+            <div id="Botones">
+                <button type="submit">Aceptar</button>
+                <button>Cancelar</button>
+            </div>
+        </form>
     </section>
     <section id="MainArea">
-      <td>
-        <table class="list" id="tabMascotas">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Telefono</th>
-              <th>Raza</th>
-              <th>Pais</th>
-              <th>Descripcion</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </td>
+        <td>
+            <table class="list" id="tabMascotas">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Raza</th>
+                        <th>Pais</th>
+                        <th>Descripcion</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </td>
     </section>
     <script src="js/Reto2.js"></script>
-  </body>
+</body>
+
 </html>
